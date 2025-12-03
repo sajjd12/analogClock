@@ -1,0 +1,10 @@
+C:\Users\scorp\source\repos\AnalogClockSweep\obj\Debug\AnalogClockSweep.csproj.AssemblyReference.cache
+C:\Users\scorp\source\repos\AnalogClockSweep\obj\Debug\AnalogClockSweep.Properties.Resources.resources
+C:\Users\scorp\source\repos\AnalogClockSweep\obj\Debug\AnalogClockSweep.csproj.GenerateResource.cache
+C:\Users\scorp\source\repos\AnalogClockSweep\obj\Debug\AnalogClockSweep.csproj.CoreCompileInputs.cache
+C:\Users\scorp\source\repos\AnalogClockSweep\bin\Debug\AnalogClockSweep.exe.config
+C:\Users\scorp\source\repos\AnalogClockSweep\bin\Debug\AnalogClockSweep.exe
+C:\Users\scorp\source\repos\AnalogClockSweep\bin\Debug\AnalogClockSweep.pdb
+C:\Users\scorp\source\repos\AnalogClockSweep\obj\Debug\AnalogClockSweep.exe
+C:\Users\scorp\source\repos\AnalogClockSweep\obj\Debug\AnalogClockSweep.pdb
+C:\Users\scorp\source\repos\AnalogClockSweep\obj\Debug\AnalogClockSweep.exe.config
