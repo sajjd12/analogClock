@@ -174,28 +174,31 @@ namespace computerGraphics
             // رسم العقارب — نرسم الساعات أولاً (أوسع) ثم الدقائق ثم الثواني لتقليل القطع البصري
             using (Pen hrPen = new Pen(Color.Black, Math.Max(6, radius / 18)))
             {
-                hrPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+                hrPen.EndCap = System.Drawing.Drawing2D.LineCap.DiamondAnchor;
                 g.DrawLine(hrPen, centerX, centerY, GetHandPoint(hrHandLen, hrAngle).X, GetHandPoint(hrHandLen, hrAngle).Y);
             }
 
             using (Pen minPen = new Pen(Color.Black, Math.Max(4, radius / 28)))
             {
-                minPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+                minPen.EndCap = System.Drawing.Drawing2D.LineCap.DiamondAnchor;
                 g.DrawLine(minPen, centerX, centerY, GetHandPoint(minHandLen, minAngle).X, GetHandPoint(minHandLen, minAngle).Y);
             }
 
             using (Pen secPen = new Pen(Color.Crimson, Math.Max(2, radius / 120)))
             {
-                secPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+                secPen.EndCap = System.Drawing.Drawing2D.LineCap.DiamondAnchor;
                 g.DrawLine(secPen, centerX, centerY, GetHandPoint(secHandLen, secAngle).X, GetHandPoint(secHandLen, secAngle).Y);
 
-                // ذيل لعقرب الثواني
+                
+            }
+            using (Pen secPen = new Pen(Color.Crimson, Math.Max(2, radius / 120)))
+            {
+                secPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
                 Point tail = GetHandPoint((int)(secHandLen * -0.15), secAngle);
                 g.DrawLine(secPen, centerX, centerY, tail.X, tail.Y);
             }
-
-            // نقطة مركزية بارزة
-            int centerDotSize = Math.Max(8, radius / 24);
+                // نقطة مركزية بارزة
+                int centerDotSize = Math.Max(8, radius / 24);
             using (Brush centerBrush = new SolidBrush(Color.Black))
             {
                 g.FillEllipse(centerBrush, centerX - centerDotSize / 2, centerY - centerDotSize / 2, centerDotSize, centerDotSize);
